@@ -1,2 +1,0 @@
-# GRUPI
-My first project

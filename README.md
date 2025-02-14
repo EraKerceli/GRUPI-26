@@ -1,33 +1,33 @@
-Flower Shop Program
-This C++ program simulates a flower shop where customers can browse flower types, create their own bouquet, choose from special offers, and calculate the final price based on their choices. The program also includes special Valentine's offers, discounts for new customers, and free delivery for orders over 20 EUR.
+Programi i Dyqanit të Luleve
 
-Features
-Flower Types: Displays a list of available flowers with their prices.
-Bouquet Creation: Allows users to choose flowers and create their own bouquet, with the option of a 10% discount for new customers.
-Special Offers:
-Valentine's Day Offer: Buy a bouquet and receive a free card and bracelet.
-2+2 Offer: Buy one rose and one tulip, and get two additional flowers for free.
-Free Delivery: Free delivery on orders over 20 EUR.
-User Interaction: The program prompts users for input, guiding them through the selection process and ensuring a smooth experience.
-How It Works
-Welcome Message: When the program starts, users are greeted and shown the available flower types along with their prices.
-Create Bouquet: Users can choose flowers to add to their bouquet. They can specify how many flowers of each type they want.
-Discount for New Customers: If the user is a first-time customer, they receive a 10% discount on their bouquet.
-Special Offers:
-If the user selects the Valentine's offer, they can choose from two pre-made bouquets.
-If they opt for the 2+2 offer, they buy a rose and tulip and can select two more flowers for free.
-Price Calculation: The program calculates the total price based on the user’s selections and applies any relevant discounts.
-Free Delivery: If the total price exceeds 20 EUR, free delivery is included.
-Code Breakdown
-miresevini(): Greets the user and welcomes them to the store.
-paraqitLule(): Displays the list of flower types and their prices.
-formoBuqete(): Allows the user to create a custom bouquet.
-ofertaShenValentin(): Displays the special Valentine's Day offer.
-zgjedhLuleFalas(): Allows the user to select free flowers as part of the 2+2 offer.
-oferta2plus2(): Handles the 2+2 offer, allowing the user to pick free flowers when purchasing certain items.
-main(): The main function that controls the flow of the program, guiding the user through all the options.
-Compilation
-To compile and run the program, use a C++ compiler. If you're using g++, you can run the following commands in your terminal:
+Ky program në C++ simulon një dyqan lulesh ku klientët mund të shikojnë llojet e luleve, të krijojnë buqetën e tyre, të zgjedhin nga ofertat speciale dhe të llogarisin çmimin përfundimtar bazuar në zgjedhjet e tyre. Programi përfshin gjithashtu oferta speciale për Shën Valentinin, zbritje për klientët e rinj dhe transport falas për porosi mbi 20 EUR.
+
+Veçoritë
+Llojet e Luleve: Shfaq një listë të luleve në dispozicion me çmimet përkatëse.
+Krijimi i Buqetës: Lejon përdoruesit të zgjedhin lule dhe të krijojnë buqetën e tyre, me mundësinë e një zbritjeje prej 10% për klientët e rinj.
+Oferta Speciale:
+Oferta e Shën Valentinit: Bli një buqetë dhe merr një kartolinë dhe byzylyk falas.
+Oferta 2+2: Bli një trëndafil dhe një tulipan dhe merr dy lule shtesë falas.
+Transport Falas: Transport falas për porosi mbi 20 EUR.
+Ndërveprimi me Përdoruesin: Programi udhëzon përdoruesit gjatë procesit të zgjedhjes duke siguruar një eksperiencë të lehtë dhe të këndshme.
+Si Funksionon
+Mesazhi i Mirëseardhjes: Kur programi nis, përdoruesit përshëndeten dhe shfaqen llojet e luleve në dispozicion me çmimet përkatëse.
+Krijimi i Buqetës: Përdoruesit mund të zgjedhin lule për të shtuar në buqetë. Ata mund të specifikojnë sasinë e çdo lloji luleje që dëshirojnë.
+Zbritje për Klientët e Rinj: Nëse përdoruesi është klient për herë të parë, ai merr një zbritje prej 10% në buqetën e tij.
+Oferta Speciale:
+Oferta e Shën Valentinit: Përdoruesi mund të zgjedhë midis dy buqetave të përgatitura paraprakisht dhe të marrë kartolinë dhe byzylyk falas.
+Oferta 2+2: Nëse përdoruesi blen një trëndafil dhe një tulipan, ai mund të zgjedhë dy lule të tjera falas.
+Llogaritja e Çmimit: Programi llogarit çmimin total bazuar në zgjedhjet e përdoruesit dhe aplikon çdo zbritje të vlefshme.
+Transport Falas: Nëse çmimi total kalon 20 EUR, përfshihet transporti falas.
+Struktura e Kodit
+miresevini() – Përshëndet përdoruesin dhe e mirëpret në dyqan.
+paraqitLule() – Shfaq listën e llojeve të luleve dhe çmimet e tyre.
+formoBuqete() – Lejon përdoruesin të krijojë një buqetë sipas dëshirës.
+ofertaShenValentin() – Shfaq ofertën speciale për Shën Valentinin.
+zgjedhLuleFalas() – Lejon përdoruesin të zgjedhë lule falas si pjesë e ofertës 2+2.
+oferta2plus2() – Menaxhon ofertën 2+2, duke lejuar përdoruesin të zgjedhë lule falas kur blen artikuj të caktuar.
+main() – Funksioni kryesor që kontrollon rrjedhën e programit dhe udhëzon përdoruesin përmes të gjitha opsioneve.
+
 
 bash
 Copy

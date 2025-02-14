@@ -4,28 +4,42 @@ Ky program në C++ simulon një dyqan lulesh ku klientët mund të shikojnë llo
 
 Veçoritë
 Llojet e Luleve: Shfaq një listë të luleve në dispozicion me çmimet përkatëse.
+
 Krijimi i Buqetës: Lejon përdoruesit të zgjedhin lule dhe të krijojnë buqetën e tyre, me mundësinë e një zbritjeje prej 10% për klientët e rinj.
+
 Oferta Speciale:
 Oferta e Shën Valentinit: Bli një buqetë dhe merr një kartolinë dhe byzylyk falas.
 Oferta 2+2: Bli një trëndafil dhe një tulipan dhe merr dy lule shtesë falas.
+
 Transport Falas: Transport falas për porosi mbi 20 EUR.
 Ndërveprimi me Përdoruesin: Programi udhëzon përdoruesit gjatë procesit të zgjedhjes duke siguruar një eksperiencë të lehtë dhe të këndshme.
 Si Funksionon
+
 Mesazhi i Mirëseardhjes: Kur programi nis, përdoruesit përshëndeten dhe shfaqen llojet e luleve në dispozicion me çmimet përkatëse.
+
 Krijimi i Buqetës: Përdoruesit mund të zgjedhin lule për të shtuar në buqetë. Ata mund të specifikojnë sasinë e çdo lloji luleje që dëshirojnë.
+
 Zbritje për Klientët e Rinj: Nëse përdoruesi është klient për herë të parë, ai merr një zbritje prej 10% në buqetën e tij.
+
 Oferta Speciale:
 Oferta e Shën Valentinit: Përdoruesi mund të zgjedhë midis dy buqetave të përgatitura paraprakisht dhe të marrë kartolinë dhe byzylyk falas.
 Oferta 2+2: Nëse përdoruesi blen një trëndafil dhe një tulipan, ai mund të zgjedhë dy lule të tjera falas.
+
 Llogaritja e Çmimit: Programi llogarit çmimin total bazuar në zgjedhjet e përdoruesit dhe aplikon çdo zbritje të vlefshme.
 Transport Falas: Nëse çmimi total kalon 20 EUR, përfshihet transporti falas.
 Struktura e Kodit
 miresevini() – Përshëndet përdoruesin dhe e mirëpret në dyqan.
+
 paraqitLule() – Shfaq listën e llojeve të luleve dhe çmimet e tyre.
+
 formoBuqete() – Lejon përdoruesin të krijojë një buqetë sipas dëshirës.
+
 ofertaShenValentin() – Shfaq ofertën speciale për Shën Valentinin.
+
 zgjedhLuleFalas() – Lejon përdoruesin të zgjedhë lule falas si pjesë e ofertës 2+2.
+
 oferta2plus2() – Menaxhon ofertën 2+2, duke lejuar përdoruesin të zgjedhë lule falas kur blen artikuj të caktuar.
+
 main() – Funksioni kryesor që kontrollon rrjedhën e programit dhe udhëzon përdoruesin përmes të gjitha opsioneve.
 
 

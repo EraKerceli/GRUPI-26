@@ -1,0 +1,48 @@
+int formoBuqete(bool zbritje) {
+    cout << "\nZgjidhni lule per te formuar buqeten tuaj. Kur te perfundoni, shtypni 0.\n";
+    paraqitLule();
+    int zgjedhja, sasia, cmimiBuqete = 0;
+
+    do {
+        cout << "Zgjidhni lulen (1-4 ose 0 per te perfunduar): ";
+        cin >> zgjedhja;
+        
+        if (zgjedhja >= 1 && zgjedhja <= 4) {
+            cout << "Sa copa deshironi?: ";
+            cin >> sasia;
+
+            switch (zgjedhja) {
+                case 1: 
+                    cmimiBuqete += sasia * 3;
+                    break;
+                case 2: 
+                    cmimiBuqete += sasia * 2;
+                    break;
+                case 3: 
+                    cmimiBuqete += sasia * 5;
+                    break;
+                case 4: 
+                    cmimiBuqete += sasia * 4;
+                    break;
+                default:
+                    break;
+            }
+        }
+    } while (zgjedhja != 0);
+
+    if (zbritje) {
+        cout << "Si klient per here te pare, keni fituar 10% zbritje!\n";
+        cmimiBuqete -= (cmimiBuqete * 0.10); 
+    }
+    
+    cout << "Cmimi i buqetes: " << cmimiBuqete << " EUR\n";
+    return cmimiBuqete;
+}
+
+void ofertaShenValentin() {
+    cout << "\nOferta per Shen Valentin: \n";
+    cout << "Nese bleni nje buqete, fitoni nje kartoline dhe nje byzylyk falas!\n";
+    cout << "Cmimet e buqetave te gatshme:\n";
+    cout << "1. Buqete e vogel - 10 EUR\n";
+    cout << "2. Buqete e madhe - 20 EUR\n";
+}

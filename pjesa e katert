@@ -15,3 +15,43 @@ int main() {
     } else {
         cout << "Zbritja nuk vlen per klientet e rregullt.\n";
     }
+
+ string ofertaSV;
+    cout << "\nDeshironi oferten per Shen Valentin? (po/jo): ";
+    cin >> ofertaSV;
+
+    if (ofertaSV == "po") {
+        ofertaShenValentin();
+        int zgjedhjaBuqetes;
+        cout << "Zgjidhni nje nga buqetat e gatshme (1-2): ";
+        cin >> zgjedhjaBuqetes;
+       
+        if (zgjedhjaBuqetes == 1) {
+            cmimiFinal += (zbritje ? 9 : 10);
+        } else if (zgjedhjaBuqetes == 2) {
+            cmimiFinal += (zbritje ? 18 : 20);
+        }
+       
+        cout << "Oferta perfshin nje kartoline dhe nje byzylyk falas!\n";
+    } else {
+        string oferta22;
+        cout << "\nDeshironi oferten 2+2 falas? (po/jo): ";
+        cin >> oferta22;
+
+        if (oferta22 == "po") {
+            oferta2plus2(zbritje);
+            cmimiFinal += (zbritje ? 4.5 : 5);
+        }
+    }
+
+    cout << "\nCmimi total: " << cmimiFinal << " EUR\n";
+
+    if (cmimiFinal >= 20) {
+        cout << "Urime! Keni fituar transport falas!\n";
+    } else {
+        cout << "Transporti nuk eshte falas per blerje nen 20 EUR.\n";
+    }
+
+    cout << "\nFaleminderit qe zgjodhet dyqanin tone te luleve!\n";
+    return 0;
+}

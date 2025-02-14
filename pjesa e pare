@@ -1,0 +1,14 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+void miresevini() {
+    cout << "Miresevini ne dyqanin tone te luleve!\n";
+}
+void paraqitLule() {
+    cout << "\nLlojet e luleve dhe cmimet per cope:\n";
+    cout << "1. Trendafil - 3 EUR\n";
+    cout << "2. Tulipan - 2 EUR\n";
+    cout << "3. Orkide - 5 EUR\n";
+    cout << "4. Zambak - 4 EUR\n";
+}

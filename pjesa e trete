@@ -1,0 +1,49 @@
+void zgjedhLuleFalas(int numriLuleve) {
+    cout << "\nZgjidhni " << numriLuleve << " lule falas.\n";
+    paraqitLule();
+    int zgjedhja;
+
+    for (int i = 0; i < numriLuleve; i++) {
+        cout << "Zgjidh lulen (1-4): ";
+        cin >> zgjedhja;
+
+        switch (zgjedhja) {
+            case 1: 
+                cout << "Zgjodhet Trendafil.\n";
+                break;
+            case 2: 
+                cout << "Zgjodhet Tulipan.\n";
+                break;
+            case 3: 
+                cout << "Zgjodhet Orkide.\n";
+                break;
+            case 4: 
+                cout << "Zgjodhet Zambak.\n";
+                break;
+            default:
+                cout << "Zgjedhje e pavlefshme!\n";
+                i--; 
+                break;
+        }
+    }
+}
+
+void oferta2plus2(bool zbritje) {
+    cout << "\nOferta 2+2 falas: \n";
+    cout << "Nese bleni nje cope Trendafil dhe nje Tulipan, mund te zgjidhni dy lule te tjera falas!\n";
+
+    int cmimiOferta = 3 + 2;
+    if (zbritje) {
+        cmimiOferta -= (cmimiOferta * 0.10); 
+    }
+
+    cout << "Cmimi per Trendafil dhe Tulipan: " << cmimiOferta << " EUR\n";
+
+    string deshironFalas;
+    cout << "Deshironi te zgjidhni dy lule falas? (po/jo): ";
+    cin >> deshironFalas;
+
+    if (deshironFalas == "po") {
+        zgjedhLuleFalas(2);
+    }
+}

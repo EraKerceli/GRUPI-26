@@ -1,0 +1,17 @@
+int main() {
+    miresevini();
+    paraqitLule();
+
+    string klientIPare;
+    cout << "\nA jeni klient per here te pare? (po/jo): ";
+    cin >> klientIPare;
+
+    bool zbritje = false;
+    int cmimiFinal = 0;
+    if (klientIPare == "po") {
+        cout << "Si klient per here te pare, mund te formoni nje buqete dhe fitoni 10% zbritje!\n";
+        zbritje = true;
+        cmimiFinal += formoBuqete(zbritje);
+    } else {
+        cout << "Zbritja nuk vlen per klientet e rregullt.\n";
+    }
